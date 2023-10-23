@@ -1,0 +1,239 @@
+@keyframes headerAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #333333;
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: #555555;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #333333;
+    }
+}
+
+@keyframes linkAnimation {
+    0% {
+        color: #000000;
+    }
+    50% {
+        color: #00fc15;
+    }
+    100% {
+        color: #000000;
+    }
+}
+
+.banner-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent; 
+    text-align: right;
+}
+
+.banner-menu ul {
+    list-style-type: none;
+}
+
+.banner-menu ul li {
+    display: inline;
+    margin-left: 20px; 
+}
+
+.banner-menu a {
+    text-decoration: none;
+    color: #000000;
+}
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("Images/BG.jpg"); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+}
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#service-search {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00fc15;
+}
+section:target {
+    background-color: rgb(22, 36, 161); 
+}
+#service-search:valid ~ section {
+    display: none;
+}
+
+#service-search:valid ~ section:target {
+    display: block;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    background-color: #333333;
+    font-family: "Times New Roman";
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+header h1 {
+    font-family: "Times New Roman";
+    font-size: 46px;
+    color: #ffffff;
+    padding: 10px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+header p {
+    margin: 0;
+    padding: 10px;
+}
+
+nav {
+    background-color: #000000;
+    color: #050202;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    animation: linkAnimation 4s infinite;
+}
+
+section {
+    background-color: #1c203f;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
+section#introduction {
+    background-color: transparent; 
+    color: #000;
+} 
+section#introduction h2 {
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+section h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+section p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+section#tyre-rescue h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#battery-failure h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#vehicle-breakdown h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#towing-services h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#fuel-delivery h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#lockout-assistance h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#jumpstart-services h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#safety-tips h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#roadside-safety-kits h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+section#contact-form {
+    background-color: transparent; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255); 
+}
+section#About {
+    background-color: transparent; 
+    color: #000000;
+} 
+section#About h2 {
+    background-color: transparent;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    background-color: #00fc15;
+}
